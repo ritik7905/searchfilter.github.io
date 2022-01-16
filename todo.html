@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/todo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="heading">Search Gallery</h2>
+      <div class="todo_data">
+        <input
+          id="user_input"
+          type="text"
+          placeholder="Search cities...."
+          onkeyup="searchCards()"
+        />
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery" id="container">
+      <span id="emptyMsg"></span>
+      <div class="images" id="array">
+        <div class="card card_1">
+          <div class="img">
+            <img src="./assets/img/1.jpg" alt="" />
+            <h3 class="title">Kashmir</h3>
+          </div>
+        </div>
+        <div class="card card_2">
+          <div class="img">
+            <img src="./assets/img/2.jpg" alt="" />
+            <h3 class="title">Ooty</h3>
+          </div>
+        </div>
+        <div class="card card_3">
+          <div class="img">
+            <img src="./assets/img/3.jpg" alt="" />
+            <h3 class="title">Amritshar</h3>
+          </div>
+        </div>
+        <div class="card card_4">
+          <div class="img">
+            <img src="./assets/img/4.jpg" alt="" />
+            <h3 class="title">Pondicheri</h3>
+          </div>
+        </div>
+        <div class="card card_5">
+          <div class="img">
+            <img src="./assets/img/5.jpg" alt="" />
+            <h3 class="title">Himachal</h3>
+          </div>
+        </div>
+        <div class="card card_6">
+          <div class="img">
+            <img src="./assets/img/6.jpg" alt="" />
+            <h3 class="title">Rajasthan</h3>
+          </div>
+        </div>
+        <div class="card card_7">
+          <div class="img">
+            <img src="./assets/img/7.jpg" alt="" />
+            <h3 class="title">Mumbai</h3>
+          </div>
+        </div>
+        <div class="card card_8">
+          <div class="img">
+            <img src="./assets/img/8.jpg" alt="" />
+            <h3 class="title">Agra</h3>
+          </div>
+        </div>
+        <div class="card card_9">
+          <div class="img">
+            <img src="./assets/img/9.jpg" alt="" />
+            <h3 class="title">Kolkatta</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/todo.js"></script>
+  </body>
+</html>

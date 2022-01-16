@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+//====================SearchBar==========================================
+
+.container {
+  margin: 50px 40px;
+  border-radius: 10px;
+  padding: 40px;
+  // width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  #heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+    color: blueviolet;
+    font-weight: bold;
+  }
+  .todo_data {
+    // height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    input {
+      width: 50vw;
+      padding: 12px 22px;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      caret-color: rgb(0, 160, 133);
+      color: rgb(165, 165, 165);
+      border: 1px solid gray;
+      font-size: 15px;
+    }
+    input:focus {
+      border: 2px solid rgb(0, 149, 168);
+    }
+  }
+}
+
+// <<=========================Gallery========================================>>
+
+.gallery {
+  #emptyMsg{
+    text-align: center;
+    display: block;
+    color: blueviolet;
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 0px;
+    justify-content: center;
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid gray;
+      .img {
+        width: 30vw;
+        height: 300px;
+        position: relative;
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      h3 {
+        z-index: 5555;
+        position: absolute;
+        bottom: 20px;
+        left: 160px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: gray;
+        
+      }
+    }
+  }
+}
